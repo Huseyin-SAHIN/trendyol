@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    .container {
+        .header {
+            width: 1200px;
+            margin: 0 auto;
+
+            .header-top {
+                text-align: end;
+
+                ul {
+                    display: inline-flex;
+
+                    li {
+                        list-style: none;
+                        margin-left: 30px;
+
+                        a {
+                            color: #999;
+                            font-size: 12px;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: #1b1b1b;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
