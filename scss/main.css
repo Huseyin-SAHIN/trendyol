@@ -37,25 +37,44 @@ body .container .header .headerMain {
 }
 body .container .header .headerMain .logo {
   width: 146px;
-  vertical-align: middle;
 }
 body .container .header .headerMain .logo a img {
   width: 100%;
 }
 body .container .header .headerMain .search {
   position: relative;
+  height: 42px;
 }
 body .container .header .headerMain .search #homeSearch {
+  background-color: #f3f3f3;
   padding: 10px 40px 10px 15px;
   border: none;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
   transition: 0.3s;
   width: 598px;
+  height: 100%;
 }
 body .container .header .headerMain .search #homeSearch:focus {
   outline: none;
   border: 2px solid #f27a1a;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+body .container .header .headerMain .search #homeSearch:focus + .search-calls {
+  visibility: visible;
+  background-color: #fff;
+}
+body .container .header .headerMain .search .search-calls {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  border: 2px solid #f27a1a;
+  border-radius: 0 0 6px 6px;
+  height: 100px;
+  top: calc(100% - 2px);
+  transition: 0.3s;
 }
 body .container .header .headerMain .search i {
   position: absolute;
