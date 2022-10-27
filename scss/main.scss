@@ -35,6 +35,107 @@ body {
                 }
             }
 
+            .headerMain {
+                display: flex;
+                justify-content: space-between;
+                height: 66px;
+                align-items: center;
+
+                .logo {
+                    width: 146px;
+                    vertical-align: middle;
+
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .search {
+                    position: relative;
+
+                    #homeSearch {
+                        padding: 10px 40px 10px 15px;
+                        border: none;
+                        border: 2px solid rgba(0, 0, 0, 0);
+                        border-radius: 6px 6px 0 0;
+                        transition: .3s;
+                        width: 598px;
+
+                        &:focus {
+                            outline: none;
+                            border: 2px solid #f27a1a;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        font-size: 100%;
+                        top: 50%;
+                        right: 15px;
+                        transform: translate(0, -50%);
+                        color: #f27a1a;
+                    }
+                }
+
+                .login {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 300px;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+
+                        &:hover {
+
+                            .login-item {
+                                .login-item-icon {
+                                    .appear {
+                                        opacity: 1;
+                                        color: #f27a1a;
+                                    }
+                                }
+                            }
+                        }
+
+                        .login-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .login-item-icon {
+
+                                position: relative;
+                                width: 18px;
+
+                                i {
+                                    font-size: 18px;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }
+
+                                .appear {
+                                    opacity: 0;
+                                    color: #fff;
+                                    transition: 0.3s;
+                                }
+                            }
+
+                            p {
+                                padding-left: 5px;
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

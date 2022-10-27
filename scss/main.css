@@ -28,4 +28,80 @@ body .container .header .header-top ul li a {
 }
 body .container .header .header-top ul li a:hover {
   color: #1b1b1b;
+}
+body .container .header .headerMain {
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  align-items: center;
+}
+body .container .header .headerMain .logo {
+  width: 146px;
+  vertical-align: middle;
+}
+body .container .header .headerMain .logo a img {
+  width: 100%;
+}
+body .container .header .headerMain .search {
+  position: relative;
+}
+body .container .header .headerMain .search #homeSearch {
+  padding: 10px 40px 10px 15px;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 6px 6px 0 0;
+  transition: 0.3s;
+  width: 598px;
+}
+body .container .header .headerMain .search #homeSearch:focus {
+  outline: none;
+  border: 2px solid #f27a1a;
+}
+body .container .header .headerMain .search i {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  font-size: 100%;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
+  color: #f27a1a;
+}
+body .container .header .headerMain .login {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+body .container .header .headerMain .login a {
+  text-decoration: none;
+  color: #000;
+}
+body .container .header .headerMain .login a:hover .login-item .login-item-icon .appear {
+  opacity: 1;
+  color: #f27a1a;
+}
+body .container .header .headerMain .login a .login-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .header .headerMain .login a .login-item .login-item-icon {
+  position: relative;
+  width: 18px;
+}
+body .container .header .headerMain .login a .login-item .login-item-icon i {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .container .header .headerMain .login a .login-item .login-item-icon .appear {
+  opacity: 0;
+  color: #fff;
+  transition: 0.3s;
+}
+body .container .header .headerMain .login a .login-item p {
+  padding-left: 5px;
+  margin-top: 2px;
 }/*# sourceMappingURL=main.css.map */
