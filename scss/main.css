@@ -136,6 +136,8 @@ body .container .header .headerMain .login a .login-item .login-item-icon {
 }
 body .container .header .headerMain .login a .login-item .login-item-icon i {
   font-size: 18px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -150,5 +152,38 @@ body .container .header .headerMain .login a .login-item p {
   padding-left: 5px;
   margin-top: 2px;
   font-size: 13px;
+  font-weight: 600;
+}
+body .container .navigation {
+  border-bottom: 1px solid #e8e8e8;
+}
+body .container .navigation #navigation {
+  width: 1200px;
+  height: 34px;
+  margin: 0 auto;
+}
+body .container .navigation #navigation .nav-main {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+body .container .navigation #navigation .nav-main .activite {
+  border-bottom: 2px solid #f27a1a;
+}
+body .container .navigation #navigation .nav-main .activite a {
+  color: #f27a1a;
+}
+body .container .navigation #navigation .nav-main li {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+body .container .navigation #navigation .nav-main li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
   font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
