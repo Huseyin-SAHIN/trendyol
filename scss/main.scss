@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-
     .container {
         .header {
             width: 1200px;
@@ -77,6 +76,7 @@ body {
                         &:focus+.search-calls {
                             visibility: visible;
                             background-color: #fff;
+                            transition-delay: 0s;
                         }
                     }
 
@@ -86,9 +86,44 @@ body {
                         width: 100%;
                         border: 2px solid #f27a1a;
                         border-radius: 0 0 6px 6px;
-                        height: 100px;
                         top: calc(100% - 2px);
-                        transition: 0.3s;
+                        transition-delay: 0.3s;
+                        padding: 1.5rem;
+                        padding-bottom: .5rem;
+
+                        .search-calls-item {
+                            h6 {
+                                font-size: 15px;
+                                color: #1b1b1b;
+                                font-weight: 600;
+
+                            }
+
+                            ul {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 10px;
+                                list-style: none;
+                                padding: 1rem 0;
+
+                                li {
+                                    a {
+                                        display: block;
+                                        text-decoration: none;
+                                        color: #000;
+                                        font-size: 14px;
+                                        padding: 4px 10px;
+                                        border: 1px solid #ccc;
+                                        border-radius: 5px;
+
+                                        &:hover {
+                                            border-color: #f27a1a;
+                                            color: #f27a1a;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
 
                     i {
@@ -100,6 +135,7 @@ body {
                         right: 15px;
                         transform: translate(0, -50%);
                         color: #f27a1a;
+                        cursor: pointer;
                     }
                 }
 
@@ -152,6 +188,8 @@ body {
                             p {
                                 padding-left: 5px;
                                 margin-top: 2px;
+                                font-size: 13px;
+                                font-weight: 600;
                             }
                         }
                     }
