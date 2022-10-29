@@ -167,23 +167,27 @@ body .container .navigation #navigation .nav-main {
   list-style: none;
   height: 100%;
 }
-body .container .navigation #navigation .nav-main .activite {
-  border-bottom: 2px solid #f27a1a;
-}
-body .container .navigation #navigation .nav-main .activite a {
-  color: #f27a1a;
-}
 body .container .navigation #navigation .nav-main li {
   flex-grow: 1;
-  display: flex;
-  justify-content: center;
   height: 100%;
-  align-items: center;
 }
 body .container .navigation #navigation .nav-main li a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
   text-decoration: none;
   color: #000;
   font-size: 14px;
   font-weight: 600;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+body .container .navigation #navigation .nav-main li a.active {
+  color: #f27a1a;
+  border-bottom: 2px solid #f27a1a;
+}
+body .container .navigation #navigation .nav-main li a:hover {
+  color: #f27a1a;
+  border-bottom: 2px solid #f27a1a;
 }/*# sourceMappingURL=main.css.map */

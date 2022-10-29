@@ -213,28 +213,37 @@ body {
                     list-style: none;
                     height: 100%;
 
-                    .activite {
-                        border-bottom: 2px solid #f27a1a;
-
-                        a {
-                            color: #f27a1a;
-                        }
-                    }
-
                     li {
                         flex-grow: 1;
-                        display: flex;
-                        justify-content: center;
                         height: 100%;
-                        align-items: center;
+
+
 
                         a {
-                            display: block;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            width: 100%;
                             text-decoration: none;
                             color: #000;
                             font-size: 14px;
                             font-weight: 600;
+                            border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+                            &.active {
+                                color: #f27a1a;
+                                border-bottom: 2px solid #f27a1a;
+                            }
+
+                            &:hover {
+                                color: #f27a1a;
+                                border-bottom: 2px solid #f27a1a;
+                            }
+
+
                         }
+
                     }
                 }
             }
