@@ -188,34 +188,35 @@ body .container .navigation #navigation .nav-main li a {
   color: #000;
   font-size: 14px;
   font-weight: 600;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 body .container .navigation #navigation .nav-main li a.active {
   color: #f27a1a;
-  border-bottom: 2px solid #f27a1a;
+  box-shadow: inset 0 -2px 0 0 #f27a1a;
 }
 body .container .navigation #navigation .nav-main li a:hover {
   color: #f27a1a;
-  border-bottom: 2px solid #f27a1a;
+  box-shadow: inset 0 -2px 0 0 #f27a1a;
 }
 body .container .component-list {
-  height: 120px;
+  margin-top: 15px;
   width: 1200px;
   margin: 0 auto;
-  margin-top: 35px;
 }
 body .container .component-list .component-item {
-  height: 100%;
-  margin-top: 25px;
-  overflow: hidden;
-}
-body .container .component-list .component-item .circled-slider {
-  display: flex;
-  margin-left: -10px;
   margin-bottom: 25px;
-  overflow: auto;
 }
-body .container .component-list .component-item .circled-slider a {
+body .container .component-list .component-item .slider-hidden {
+  overflow: hidden;
+  height: 140px;
+  margin-top: 15px;
+}
+body .container .component-list .component-item .slider-hidden .circled-slider {
+  display: flex;
+  overflow: auto;
+  margin-top: 20px;
+  margin-left: -10px;
+}
+body .container .component-list .component-item .slider-hidden .circled-slider a {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -223,13 +224,13 @@ body .container .component-list .component-item .circled-slider a {
   height: 120px;
   align-items: center;
 }
-body .container .component-list .component-item .circled-slider a:hover img {
+body .container .component-list .component-item .slider-hidden .circled-slider a:hover img {
   border: 1px solid #f27a1a;
 }
-body .container .component-list .component-item .circled-slider a:hover span {
+body .container .component-list .component-item .slider-hidden .circled-slider a:hover span {
   color: #f27a1a;
 }
-body .container .component-list .component-item .circled-slider a img {
+body .container .component-list .component-item .slider-hidden .circled-slider a img {
   margin: 0 auto;
   width: 68px;
   height: 68px;
@@ -237,7 +238,7 @@ body .container .component-list .component-item .circled-slider a img {
   border-radius: 50%;
   transition: 0.2s;
 }
-body .container .component-list .component-item .circled-slider a span {
+body .container .component-list .component-item .slider-hidden .circled-slider a span {
   font-size: 14px;
   color: #333;
   font-weight: 600;
@@ -251,8 +252,57 @@ body .container .component-list .component-item .circled-slider a span {
 body .container .component-list .component-item .widget-container {
   display: flex;
   gap: 20px;
+  height: 77px;
+}
+body .container .component-list .component-item .widget-container a {
+  height: 0px;
 }
 body .container .component-list .component-item .widget-container a img {
   width: 100%;
   display: block;
+}
+body .container .component-list .component-item .widget-information {
+  display: flex;
+  gap: 25px;
+}
+body .container .component-list .component-item .widget-information a {
+  box-shadow: 0 0 7px #d3d3d3;
+  text-decoration: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+body .container .component-list .component-item .widget-information a:hover img {
+  border-color: #f27a1a;
+}
+body .container .component-list .component-item .widget-information a:hover figcaption {
+  background-color: #f27a1a;
+  border-color: #f27a1a;
+}
+body .container .component-list .component-item .widget-information a:hover figcaption .hover-text {
+  opacity: 1;
+}
+body .container .component-list .component-item .widget-information a figure img {
+  border: 1px solid #d3d3d3;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+body .container .component-list .component-item .widget-information a figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1b1b;
+  color: #fff;
+  height: 38px;
+  font-size: 14px;
+  padding: 0 17px;
+  border: 1px solid #d3d3d3;
+  border-top: none;
+  line-height: 38px;
+  transition: 0.3s;
+}
+body .container .component-list .component-item .widget-information a figure figcaption .hover-text {
+  opacity: 0;
+  transition: 0.3;
 }/*# sourceMappingURL=main.css.map */

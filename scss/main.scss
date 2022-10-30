@@ -52,6 +52,7 @@ body {
                             width: 100%;
                             display: block;
 
+
                         }
                     }
                 }
@@ -235,16 +236,15 @@ body {
                             color: #000;
                             font-size: 14px;
                             font-weight: 600;
-                            border-bottom: 2px solid rgba(0, 0, 0, 0);
 
                             &.active {
                                 color: #f27a1a;
-                                border-bottom: 2px solid #f27a1a;
+                                box-shadow: inset 0 -2px 0 0 #f27a1a;
                             }
 
                             &:hover {
                                 color: #f27a1a;
-                                border-bottom: 2px solid #f27a1a;
+                                box-shadow: inset 0 -2px 0 0 #f27a1a;
                             }
 
 
@@ -256,77 +256,143 @@ body {
         }
 
         .component-list {
-            height: 120px;
+            margin-top: 15px;
             width: 1200px;
             margin: 0 auto;
-            margin-top: 35px;
-
 
             .component-item {
-                height: 100%;
-                margin-top: 25px;
-                overflow: hidden;
+                margin-bottom: 25px;
 
-                .circled-slider {
-                    display: flex;
-                    margin-left: -10px;
-                    margin-bottom: 25px;
-                    overflow: auto;
+                .slider-hidden {
+                    overflow: hidden;
+                    height: 140px;
+                    margin-top: 15px;
 
 
-                    a {
+                    .circled-slider {
                         display: flex;
-                        flex-direction: column;
-                        text-decoration: none;
-                        min-width: 115px;
-                        height: 120px;
-                        align-items: center;
+                        overflow: auto;
+                        margin-top: 20px;
+                        margin-left: -10px;
 
-                        &:hover {
+
+                        a {
+                            display: flex;
+                            flex-direction: column;
+                            text-decoration: none;
+                            min-width: 115px;
+                            height: 120px;
+                            align-items: center;
+
+                            &:hover {
+                                img {
+                                    border: 1px solid #f27a1a;
+                                }
+
+                                span {
+                                    color: #f27a1a;
+                                }
+                            }
+
                             img {
-                                border: 1px solid #f27a1a;
+                                margin: 0 auto;
+                                width: 68px;
+                                height: 68px;
+                                border: 1px solid rgb(230, 230, 230);
+                                border-radius: 50%;
+                                transition: 0.2s;
+
                             }
 
                             span {
-                                color: #f27a1a;
+                                font-size: 14px;
+                                color: #333;
+                                font-weight: 600;
+                                transition: 0.2s;
+                                width: 74px;
+                                text-align: center;
+                                margin-top: 10px;
+                                height: 100%;
+                                line-height: 14px;
                             }
-                        }
-
-                        img {
-                            margin: 0 auto;
-                            width: 68px;
-                            height: 68px;
-                            border: 1px solid rgb(230, 230, 230);
-                            border-radius: 50%;
-                            transition: 0.2s;
-
-                        }
-
-                        span {
-                            font-size: 14px;
-                            color: #333;
-                            font-weight: 600;
-                            transition: 0.2s;
-                            width: 74px;
-                            text-align: center;
-                            margin-top: 10px;
-                            height: 100%;
-                            line-height: 14px;
                         }
                     }
                 }
 
-                .widget-container{
+                .widget-container {
                     display: flex;
                     gap: 20px;
-                    a{
-                        img{
+                    height: 77px;
+
+                    a {
+                        height: 0px;
+
+                        img {
                             width: 100%;
                             display: block;
                         }
                     }
                 }
+
+                .widget-information {
+                    display: flex;
+                    gap: 25px;
+
+                    a {
+                        box-shadow: 0 0 7px #d3d3d3;
+                        text-decoration: none;
+                        border-radius: 6px;
+                        overflow: hidden;
+
+                        &:hover {
+                            img {
+                                border-color: #f27a1a;
+                            }
+
+                            figcaption {
+                                background-color: #f27a1a;
+                                border-color: #f27a1a;
+
+                                .hover-text {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        figure {
+                            img {
+                                border: 1px solid #d3d3d3;
+                                border-bottom: none;
+                                border-radius: 6px 6px 0 0;
+                                display: block;
+                                width: 100%;
+                                transition: 0.3s;
+                            }
+
+                            figcaption {
+                                display: flex;
+                                justify-content: space-between;
+                                background-color: #1b1b1b;
+                                color: #fff;
+                                height: 38px;
+                                font-size: 14px;
+                                padding: 0 17px;
+                                border: 1px solid #d3d3d3;
+                                border-top: none;
+                                line-height: 38px;
+                                transition: 0.3s;
+
+                                .hover-text {
+                                    opacity: 0;
+                                    transition: 0.3;
+                                }
+
+                            }
+                        }
+                    }
+                }
             }
+
         }
 
     }
