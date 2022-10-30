@@ -7,6 +7,7 @@
 
 body {
     height: 1000px;
+
     .container {
         .header {
             width: 1200px;
@@ -45,8 +46,12 @@ body {
                     width: 146px;
 
                     a {
+                        display: block;
+
                         img {
                             width: 100%;
+                            display: block;
+
                         }
                     }
                 }
@@ -254,10 +259,12 @@ body {
             height: 120px;
             width: 1200px;
             margin: 0 auto;
+            margin-top: 35px;
+
 
             .component-item {
                 height: 100%;
-                margin-top: 35px;
+                margin-top: 25px;
                 overflow: hidden;
 
                 .circled-slider {
@@ -305,6 +312,17 @@ body {
                             margin-top: 10px;
                             height: 100%;
                             line-height: 14px;
+                        }
+                    }
+                }
+
+                .widget-container{
+                    display: flex;
+                    gap: 20px;
+                    a{
+                        img{
+                            width: 100%;
+                            display: block;
                         }
                     }
                 }

@@ -39,8 +39,12 @@ body .container .header .headerMain {
 body .container .header .headerMain .logo {
   width: 146px;
 }
+body .container .header .headerMain .logo a {
+  display: block;
+}
 body .container .header .headerMain .logo a img {
   width: 100%;
+  display: block;
 }
 body .container .header .headerMain .search {
   position: relative;
@@ -198,10 +202,11 @@ body .container .component-list {
   height: 120px;
   width: 1200px;
   margin: 0 auto;
+  margin-top: 35px;
 }
 body .container .component-list .component-item {
   height: 100%;
-  margin-top: 35px;
+  margin-top: 25px;
   overflow: hidden;
 }
 body .container .component-list .component-item .circled-slider {
@@ -242,4 +247,12 @@ body .container .component-list .component-item .circled-slider a span {
   margin-top: 10px;
   height: 100%;
   line-height: 14px;
+}
+body .container .component-list .component-item .widget-container {
+  display: flex;
+  gap: 20px;
+}
+body .container .component-list .component-item .widget-container a img {
+  width: 100%;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
