@@ -221,6 +221,7 @@ body .container .component-list .component-item .slider-hidden .circled-slider a
   flex-direction: column;
   text-decoration: none;
   min-width: 115px;
+  max-width: 115px;
   height: 120px;
   align-items: center;
 }
@@ -305,4 +306,154 @@ body .container .component-list .component-item .widget-information a figure fig
 body .container .component-list .component-item .widget-information a figure figcaption .hover-text {
   opacity: 0;
   transition: 0.3;
+}
+body .container .component-list .component-item .products .product-container {
+  padding: 12px 21px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #f2e5da;
+  background-color: #FFFAF6;
+  max-height: 345px;
+}
+body .container .component-list .component-item .products .product-container .product-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+body .container .component-list .component-item .products .product-container .product-header span {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+}
+body .container .component-list .component-item .products .product-container .product-header .widget-header-navigation a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+body .container .component-list .component-item .products .product-container .product-main {
+  overflow: hidden;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product {
+  border: solid 1px #e6e6e6;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  min-width: 198px;
+  max-width: 198px;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  z-index: 100;
+  display: block;
+  height: 100%;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a:hover .custom-stamp-box-wrapper img {
+  transform: scale(1.015);
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a:hover .product-img img {
+  transform: scale(1.03);
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .product-img {
+  text-align: center;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .product-img img {
+  max-height: 135px;
+  margin: 5px auto;
+  transition: 0.5s;
+  width: 50%;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .description {
+  padding: 10px 0;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .description .product-brand-description {
+  height: 36px;
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .description .product-brand-description .brand {
+  font-weight: 600;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .description .price-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #f27a1a;
+  font-weight: 600;
+  margin-top: 12px;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .promotion-badge {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  text-align: center;
+  max-width: 128px;
+  height: 14px;
+  line-height: 14px;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .promotion-badge p {
+  background-color: #f27a1a;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 11px;
+  color: #fff;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .product-favorite-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 33px;
+  height: 33px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+  border: solid 1px #f0f0f0;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .product-favorite-btn i {
+  margin-top: 4px;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .product-favorite-btn:hover {
+  color: #f27a1a;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .box-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .box-wrapper .stamp-box-wrapper {
+  background-color: #535353;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  font-size: 10px;
+  width: 56px;
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-top: 1px;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .box-wrapper .custom-stamp-box-wrapper {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .box-wrapper .custom-stamp-box-wrapper img {
+  width: 26%;
 }/*# sourceMappingURL=main.css.map */
