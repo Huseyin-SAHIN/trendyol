@@ -330,9 +330,6 @@ body .container .component-list .component-item .products .product-container .pr
   font-size: 14px;
   font-weight: 600;
 }
-body .container .component-list .component-item .products .product-container .product-main {
-  overflow: hidden;
-}
 body .container .component-list .component-item .products .product-container .product-main .product-slider {
   display: flex;
   gap: 15px;

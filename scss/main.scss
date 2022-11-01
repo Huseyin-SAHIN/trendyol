@@ -401,6 +401,7 @@ body {
                         border: 1px solid #f2e5da;
                         background-color: #FFFAF6;
                         max-height: 345px;
+                        // overflow: hidden;
 
                         .product-header {
                             display: flex;
@@ -423,7 +424,7 @@ body {
                         }
 
                         .product-main {
-                            overflow: hidden;
+                            // overflow: auto;
                             .product-slider {
                                 display: flex;
                                 gap: 15px;
