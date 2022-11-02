@@ -263,7 +263,8 @@ body .container .component-list .component-item .widget-container a img {
   display: block;
 }
 body .container .component-list .component-item .widget-information {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 body .container .component-list .component-item .widget-information a {
@@ -314,6 +315,7 @@ body .container .component-list .component-item .products .product-container {
   border: 1px solid #f2e5da;
   background-color: #FFFAF6;
   max-height: 345px;
+  overflow: hidden;
 }
 body .container .component-list .component-item .products .product-container .product-header {
   display: flex;
@@ -329,6 +331,9 @@ body .container .component-list .component-item .products .product-container .pr
   color: #333;
   font-size: 14px;
   font-weight: 600;
+}
+body .container .component-list .component-item .products .product-container .product-main {
+  overflow: auto;
 }
 body .container .component-list .component-item .products .product-container .product-main .product-slider {
   display: flex;
