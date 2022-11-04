@@ -198,9 +198,9 @@ body .container .navigation #navigation .nav-main li a:hover {
   box-shadow: inset 0 -2px 0 0 #f27a1a;
 }
 body .container .component-list {
-  margin-top: 15px;
   width: 1200px;
   margin: 0 auto;
+  padding-bottom: 15px;
 }
 body .container .component-list .component-item {
   margin-bottom: 25px;
@@ -458,4 +458,36 @@ body .container .component-list .component-item .products .product-container .pr
 }
 body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .box-wrapper .custom-stamp-box-wrapper img {
   width: 26%;
+}
+body .container footer {
+  border-bottom: 1px solid #d4d4d4;
+}
+body .container footer .content-wrapper {
+  border-top: 1px solid #d4d4d4;
+  padding-top: 30px;
+  width: 1200px;
+  margin: 50px auto 0 auto;
+}
+body .container footer .content-wrapper .content-title h2 {
+  height: 25px;
+  line-height: 25px;
+  font-size: 23px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+body .container footer .content-wrapper .content-main section h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  color: #333;
+  font-weight: 600;
+}
+body .container footer .content-wrapper .content-main section p {
+  font-size: 13px;
+  text-align: justify;
+  line-height: 25px;
+}
+body .container footer .content-wrapper .content-main section p strong {
+  font-weight: normal;
 }/*# sourceMappingURL=main.css.map */
