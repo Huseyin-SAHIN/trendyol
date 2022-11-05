@@ -631,6 +631,51 @@ body {
                     }
                 }
             }
+
+            .internal-linking {
+                width: 1080px;
+                margin: 0 auto;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+
+                .popularBrands,
+                .popularBrands-categories {
+                    width: 45%;
+
+                    .popularBrands-title,
+                    .popularBrands-categories-title {
+                        p {
+                            font-size: 22px;
+                            margin: 10px 0 20px;
+                            color: #333;
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        list-style: none;
+                        li {
+                            flex: 0 26%;
+                            margin: 3px 0 5px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            a {
+                                color: #1b1b1b;
+                                text-decoration: none;
+                                font-size: 13px;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }

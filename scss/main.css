@@ -490,4 +490,48 @@ body .container footer .content-wrapper .content-main section p {
 }
 body .container footer .content-wrapper .content-main section p strong {
   font-weight: normal;
+}
+body .container footer .internal-linking {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+body .container footer .internal-linking .popularBrands,
+body .container footer .internal-linking .popularBrands-categories {
+  width: 45%;
+}
+body .container footer .internal-linking .popularBrands .popularBrands-title p,
+body .container footer .internal-linking .popularBrands .popularBrands-categories-title p,
+body .container footer .internal-linking .popularBrands-categories .popularBrands-title p,
+body .container footer .internal-linking .popularBrands-categories .popularBrands-categories-title p {
+  font-size: 22px;
+  margin: 10px 0 20px;
+  color: #333;
+}
+body .container footer .internal-linking .popularBrands ul,
+body .container footer .internal-linking .popularBrands-categories ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+body .container footer .internal-linking .popularBrands ul li,
+body .container footer .internal-linking .popularBrands-categories ul li {
+  flex: 0 26%;
+  margin: 3px 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body .container footer .internal-linking .popularBrands ul li a,
+body .container footer .internal-linking .popularBrands-categories ul li a {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-size: 13px;
+}
+body .container footer .internal-linking .popularBrands ul li a:hover,
+body .container footer .internal-linking .popularBrands-categories ul li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
