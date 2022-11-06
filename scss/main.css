@@ -534,4 +534,67 @@ body .container footer .internal-linking .popularBrands-categories ul li a {
 body .container footer .internal-linking .popularBrands ul li a:hover,
 body .container footer .internal-linking .popularBrands-categories ul li a:hover {
   text-decoration: underline;
+}
+body .container footer .footer-container {
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+body .container footer .footer-container .footer-container-main {
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  margin: 0 auto;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div a {
+  text-decoration: none;
+  color: #fff;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div a h4 {
+  font-size: 22px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul {
+  list-style: none;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li {
+  margin-top: 20px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li a {
+  color: #fff;
+  font-size: 13px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div img {
+  height: 25px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div img.data-matrix {
+  height: 100px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li button {
+  border: solid 1px #fff;
+  text-align: center;
+  font-size: 14px;
+  width: 95px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

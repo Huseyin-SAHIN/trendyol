@@ -657,12 +657,14 @@ body {
                         flex-wrap: wrap;
                         justify-content: space-between;
                         list-style: none;
+
                         li {
                             flex: 0 26%;
                             margin: 3px 0 5px;
                             overflow: hidden;
                             text-overflow: ellipsis;
                             white-space: nowrap;
+
                             a {
                                 color: #1b1b1b;
                                 text-decoration: none;
@@ -670,6 +672,84 @@ body {
 
                                 &:hover {
                                     text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-container {
+                background-color: #000;
+                padding-top: 50px;
+                padding-bottom: 55px;
+
+                .footer-container-main {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 1080px;
+                    margin: 0 auto;
+
+                    .footer-container-item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        div {
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+
+                                h4 {
+                                    font-size: 22px;
+                                    padding-bottom: 5px;
+                                    margin-bottom: 20px;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            ul {
+                                list-style: none;
+
+                                li {
+                                    margin-top: 20px;
+
+                                    a {
+                                        color: #fff;
+                                        font-size: 13px;
+                                    }
+
+                                    p {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        color: #fff;
+                                    }
+
+                                    div {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        img {
+                                            height: 25px;
+                                        }
+
+                                        img.data-matrix {
+                                            height: 100px;
+                                        }
+                                    }
+
+                                    button {
+                                        border: solid 1px #fff;
+                                        text-align: center;
+                                        font-size: 14px;
+                                        width: 95px;
+                                        color: #fff;
+                                        background-color: #000;
+                                        border-radius: 6px;
+                                        font-weight: 600;
+                                        cursor: pointer;
+                                    }
                                 }
                             }
                         }
