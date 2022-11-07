@@ -459,9 +459,6 @@ body .container .component-list .component-item .products .product-container .pr
 body .container .component-list .component-item .products .product-container .product-main .product-slider .product a .box-wrapper .custom-stamp-box-wrapper img {
   width: 26%;
 }
-body .container footer {
-  border-bottom: 1px solid #d4d4d4;
-}
 body .container footer .content-wrapper {
   border-top: 1px solid #d4d4d4;
   padding-top: 30px;
@@ -491,48 +488,51 @@ body .container footer .content-wrapper .content-main section p {
 body .container footer .content-wrapper .content-main section p strong {
   font-weight: normal;
 }
-body .container footer .internal-linking {
+body .container footer .footer-brands {
+  border-top: 1px solid #d4d4d4;
+  margin: 20px;
+}
+body .container footer .footer-brands .internal-linking {
   width: 1080px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
 }
-body .container footer .internal-linking .popularBrands,
-body .container footer .internal-linking .popularBrands-categories {
+body .container footer .footer-brands .internal-linking .popularBrands,
+body .container footer .footer-brands .internal-linking .popularBrands-categories {
   width: 45%;
 }
-body .container footer .internal-linking .popularBrands .popularBrands-title p,
-body .container footer .internal-linking .popularBrands .popularBrands-categories-title p,
-body .container footer .internal-linking .popularBrands-categories .popularBrands-title p,
-body .container footer .internal-linking .popularBrands-categories .popularBrands-categories-title p {
+body .container footer .footer-brands .internal-linking .popularBrands .popularBrands-title p,
+body .container footer .footer-brands .internal-linking .popularBrands .popularBrands-categories-title p,
+body .container footer .footer-brands .internal-linking .popularBrands-categories .popularBrands-title p,
+body .container footer .footer-brands .internal-linking .popularBrands-categories .popularBrands-categories-title p {
   font-size: 22px;
   margin: 10px 0 20px;
   color: #333;
 }
-body .container footer .internal-linking .popularBrands ul,
-body .container footer .internal-linking .popularBrands-categories ul {
+body .container footer .footer-brands .internal-linking .popularBrands ul,
+body .container footer .footer-brands .internal-linking .popularBrands-categories ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
 }
-body .container footer .internal-linking .popularBrands ul li,
-body .container footer .internal-linking .popularBrands-categories ul li {
+body .container footer .footer-brands .internal-linking .popularBrands ul li,
+body .container footer .footer-brands .internal-linking .popularBrands-categories ul li {
   flex: 0 26%;
   margin: 3px 0 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-body .container footer .internal-linking .popularBrands ul li a,
-body .container footer .internal-linking .popularBrands-categories ul li a {
+body .container footer .footer-brands .internal-linking .popularBrands ul li a,
+body .container footer .footer-brands .internal-linking .popularBrands-categories ul li a {
   color: #1b1b1b;
   text-decoration: none;
   font-size: 13px;
 }
-body .container footer .internal-linking .popularBrands ul li a:hover,
-body .container footer .internal-linking .popularBrands-categories ul li a:hover {
+body .container footer .footer-brands .internal-linking .popularBrands ul li a:hover,
+body .container footer .footer-brands .internal-linking .popularBrands-categories ul li a:hover {
   text-decoration: underline;
 }
 body .container footer .footer-container {
@@ -635,4 +635,30 @@ body .container footer .footer-container .footer-container-main .footer-containe
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
+}
+body .container footer .bandInfo {
+  background-color: #2D2D2D;
+}
+body .container footer .bandInfo .bandInfo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+body .container footer .bandInfo .bandInfo-wrapper div {
+  color: #fff;
+  font-size: 12px;
+}
+body .container footer .bandInfo .bandInfo-wrapper div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .container footer .bandInfo .bandInfo-wrapper div ul li {
+  padding: 0 10px;
+}
+body .container footer .bandInfo .bandInfo-wrapper div ul li a {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

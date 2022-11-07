@@ -590,8 +590,6 @@ body {
         }
 
         footer {
-            border-bottom: 1px solid #d4d4d4;
-
             .content-wrapper {
                 border-top: 1px solid #d4d4d4;
                 padding-top: 30px;
@@ -632,46 +630,49 @@ body {
                 }
             }
 
-            .internal-linking {
-                width: 1080px;
-                margin: 0 auto;
-                margin-top: 30px;
-                display: flex;
-                justify-content: space-between;
+            .footer-brands {
+                border-top: 1px solid #d4d4d4;
+                margin: 20px;
+                .internal-linking {
+                    width: 1080px;
+                    margin: 30px auto;
+                    display: flex;
+                    justify-content: space-between;
 
-                .popularBrands,
-                .popularBrands-categories {
-                    width: 45%;
+                    .popularBrands,
+                    .popularBrands-categories {
+                        width: 45%;
 
-                    .popularBrands-title,
-                    .popularBrands-categories-title {
-                        p {
-                            font-size: 22px;
-                            margin: 10px 0 20px;
-                            color: #333;
+                        .popularBrands-title,
+                        .popularBrands-categories-title {
+                            p {
+                                font-size: 22px;
+                                margin: 10px 0 20px;
+                                color: #333;
+                            }
                         }
-                    }
 
-                    ul {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        list-style: none;
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            list-style: none;
 
-                        li {
-                            flex: 0 26%;
-                            margin: 3px 0 5px;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
+                            li {
+                                flex: 0 26%;
+                                margin: 3px 0 5px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
 
-                            a {
-                                color: #1b1b1b;
-                                text-decoration: none;
-                                font-size: 13px;
+                                a {
+                                    color: #1b1b1b;
+                                    text-decoration: none;
+                                    font-size: 13px;
 
-                                &:hover {
-                                    text-decoration: underline;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                         }
@@ -700,7 +701,7 @@ body {
                                 text-decoration: none;
                                 color: #fff;
 
-                                &:hover{
+                                &:hover {
                                     text-decoration: underline;
                                 }
 
@@ -810,6 +811,38 @@ body {
                                         font-weight: 600;
                                         cursor: pointer;
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bandInfo {
+                background-color: #2D2D2D;
+
+                .bandInfo-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 1080px;
+                    margin: 0 auto;
+                    padding: 10px 0;
+
+                    div {
+                        color: #fff;
+                        font-size: 12px;
+
+                        ul {
+                            list-style: none;
+                            display: flex;
+                            flex-direction: row-reverse;
+
+                            li {
+                                padding: 0 10px;
+
+                                a {
+                                    color: #fff;
+                                    text-decoration: none;
                                 }
                             }
                         }
