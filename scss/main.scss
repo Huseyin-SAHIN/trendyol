@@ -700,6 +700,10 @@ body {
                                 text-decoration: none;
                                 color: #fff;
 
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+
                                 h4 {
                                     font-size: 22px;
                                     padding-bottom: 5px;
@@ -731,11 +735,67 @@ body {
                                         align-items: center;
 
                                         img {
-                                            height: 25px;
+                                            height: 35px;
+                                            margin-right: 20px;
                                         }
 
-                                        img.data-matrix {
-                                            height: 100px;
+                                        a {
+
+                                            i {
+                                                font-size: 25px;
+
+                                                &:hover {
+                                                    color: #34589D;
+                                                }
+                                            }
+                                        }
+
+                                    }
+
+                                    div.app {
+                                        flex-direction: column;
+
+                                        a {
+                                            width: 100%;
+                                            margin-top: 10px;
+
+                                            img {
+                                                display: block;
+                                                width: 155px;
+                                                height: 40px;
+                                            }
+                                        }
+                                    }
+
+                                    .data-matrix {
+                                        align-items: flex-start;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 30px;
+
+                                        div {
+                                            display: block;
+
+                                            a {
+                                                img {
+                                                    display: block;
+                                                    margin: 0;
+                                                }
+
+                                            }
+                                        }
+
+                                        div:nth-child(1) {
+                                            img {
+                                                height: 100px;
+                                            }
+
+                                        }
+
+                                        div:nth-child(2) {
+                                            img {
+                                                height: 50px;
+                                            }
                                         }
                                     }
 

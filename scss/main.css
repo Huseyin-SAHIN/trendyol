@@ -555,6 +555,9 @@ body .container footer .footer-container .footer-container-main .footer-containe
   text-decoration: none;
   color: #fff;
 }
+body .container footer .footer-container .footer-container-main .footer-container-item div a:hover {
+  text-decoration: underline;
+}
 body .container footer .footer-container .footer-container-main .footer-container-item div a h4 {
   font-size: 22px;
   padding-bottom: 5px;
@@ -582,10 +585,45 @@ body .container footer .footer-container .footer-container-main .footer-containe
   align-items: center;
 }
 body .container footer .footer-container .footer-container-main .footer-container-item div ul li div img {
-  height: 25px;
+  height: 35px;
+  margin-right: 20px;
 }
-body .container footer .footer-container .footer-container-main .footer-container-item div ul li div img.data-matrix {
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div a i {
+  font-size: 25px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div a i:hover {
+  color: #34589D;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div.app {
+  flex-direction: column;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div.app a {
+  width: 100%;
+  margin-top: 10px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li div.app a img {
+  display: block;
+  width: 155px;
+  height: 40px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li .data-matrix {
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li .data-matrix div {
+  display: block;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li .data-matrix div a img {
+  display: block;
+  margin: 0;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li .data-matrix div:nth-child(1) img {
   height: 100px;
+}
+body .container footer .footer-container .footer-container-main .footer-container-item div ul li .data-matrix div:nth-child(2) img {
+  height: 50px;
 }
 body .container footer .footer-container .footer-container-main .footer-container-item div ul li button {
   border: solid 1px #fff;
