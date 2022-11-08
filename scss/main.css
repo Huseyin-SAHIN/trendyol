@@ -122,9 +122,9 @@ body .container .header .headerMain .search i {
 body .container .header .headerMain .login {
   display: flex;
   justify-content: space-between;
-  width: 300px;
 }
 body .container .header .headerMain .login a {
+  margin-left: 24px;
   text-decoration: none;
   color: #000;
 }
@@ -253,7 +253,7 @@ body .container .component-list .component-item .slider-hidden .circled-slider a
 body .container .component-list .component-item .widget-container {
   display: flex;
   gap: 20px;
-  height: 77px;
+  min-height: 77px;
 }
 body .container .component-list .component-item .widget-container a {
   height: 0px;
@@ -466,7 +466,6 @@ body .container footer .content-wrapper {
   margin: 50px auto 0 auto;
 }
 body .container footer .content-wrapper .content-title h2 {
-  height: 25px;
   line-height: 25px;
   font-size: 23px;
   color: #333;

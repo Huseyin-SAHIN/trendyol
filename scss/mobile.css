@@ -1,1 +1,76 @@
-/*# sourceMappingURL=mobile.css.map */
+@media (max-width: 600px) {
+  body .container .header {
+    width: 100%;
+  }
+  body .container .header .header-top {
+    display: none;
+  }
+  body .container .header .headerMain {
+    height: 120px;
+  }
+  body .container .header .headerMain .search {
+    display: none;
+  }
+  body .container .header .headerMain .login {
+    justify-content: end;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  body .container .header .headerMain .login a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  body .container .header .headerMain .login a .login-item .login-item-icon i {
+    height: 22px;
+    width: 22px;
+    font-size: 22px;
+  }
+  body .container .header .headerMain .login a p {
+    display: none;
+  }
+  body .container .navigation {
+    overflow: hidden;
+  }
+  body .container .component-list {
+    width: 100%;
+  }
+  body .container .component-list .component-item .widget-container {
+    display: none;
+  }
+  body .container .component-list .component-item .widget-information {
+    display: block;
+  }
+  body .container footer .content-wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+  body .container footer .footer-brands .internal-linking {
+    width: 100%;
+    display: block;
+  }
+  body .container footer .footer-brands .internal-linking .popularBrands,
+body .container footer .footer-brands .internal-linking .popularBrands-categories {
+    width: 100%;
+  }
+  body .container footer .footer-container .footer-container-main {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+  }
+  body .container footer .footer-container .footer-container-main .footer-container-item {
+    flex-direction: row;
+  }
+  body .container footer .footer-container .footer-container-main .footer-container-item div ul li {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  body .container footer .footer-container .footer-container-main .footer-container-item div ul li div img {
+    margin-right: 0;
+  }
+  body .container footer .footer-container .footer-container-main .footer-container-item div ul li div a i {
+    padding-right: 10px;
+  }
+  body .container footer .bandInfo {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile.css.map */

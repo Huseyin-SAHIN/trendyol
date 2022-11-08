@@ -1,0 +1,118 @@
+@media (max-width: 600px) {
+    body {
+        .container {
+            .header {
+                width: 100%;
+
+                .header-top {
+                    display: none;
+                }
+
+                .headerMain {
+                    height: 120px;
+
+                    .search {
+                        display: none;
+                    }
+
+                    .login {
+                        justify-content: end;
+                        gap: 10px;
+                        margin-right: 10px;
+
+                        a {
+                            margin-left: 0;
+                            margin-right: 10px;
+                            .login-item{
+                                .login-item-icon{
+                                    i{
+                                        height: 22px;
+                                        width: 22px;
+                                        font-size: 22px;
+                                    }
+                                }
+                            }
+                            p {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navigation {
+                overflow: hidden;
+            }
+
+            .component-list {
+                width: 100%;
+
+                .component-item {
+
+                    .widget-container {
+                        display: none;
+                    }
+
+                    .widget-information {
+                        display: block
+                    }
+                }
+            }
+
+            footer {
+                .content-wrapper {
+                    width: 100%;
+                    padding: 1rem;
+                }
+
+                .footer-brands {
+                    .internal-linking {
+                        width: 100%;
+                        display: block;
+
+                        .popularBrands,
+                        .popularBrands-categories {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .footer-container {
+                    .footer-container-main {
+                        padding: 1rem;
+                        display: block;
+                        width: 100%;
+
+                        .footer-container-item {
+                            flex-direction: row;
+
+                            div {
+                                ul {
+                                    li {
+                                        margin-top: 0;
+                                        margin-bottom: 20px;
+
+                                        div {
+                                            img{
+                                                margin-right: 0;
+                                            }
+                                            a {
+                                                i {
+                                                    padding-right: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bandInfo {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -149,9 +149,8 @@ body {
                 .login {
                     display: flex;
                     justify-content: space-between;
-                    width: 300px;
-
                     a {
+                        margin-left: 24px;
                         text-decoration: none;
                         color: #000;
 
@@ -323,7 +322,7 @@ body {
                 .widget-container {
                     display: flex;
                     gap: 20px;
-                    height: 77px;
+                    min-height: 77px;
 
                     a {
                         height: 0px;
@@ -598,7 +597,6 @@ body {
 
                 .content-title {
                     h2 {
-                        height: 25px;
                         line-height: 25px;
                         font-size: 23px;
                         color: #333;
