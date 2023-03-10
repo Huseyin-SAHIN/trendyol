@@ -7,9 +7,18 @@
   }
   body .container .header .headerMain {
     height: 120px;
+    flex-wrap: wrap;
+  }
+  body .container .header .headerMain .logo {
+    margin-left: 1rem;
   }
   body .container .header .headerMain .search {
-    display: none;
+    order: 3;
+    flex-basis: 100%;
+    margin: 0 1rem;
+  }
+  body .container .header .headerMain .search #homeSearch {
+    width: 100%;
   }
   body .container .header .headerMain .login {
     justify-content: end;
@@ -49,7 +58,7 @@
     display: block;
   }
   body .container footer .footer-brands .internal-linking .popularBrands,
-body .container footer .footer-brands .internal-linking .popularBrands-categories {
+  body .container footer .footer-brands .internal-linking .popularBrands-categories {
     width: 100%;
   }
   body .container footer .footer-container .footer-container-main {

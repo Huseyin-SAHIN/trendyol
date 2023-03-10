@@ -10,9 +10,19 @@
 
                 .headerMain {
                     height: 120px;
+                    flex-wrap: wrap;
+
+                    .logo{
+                        margin-left: 1rem;
+                    }
 
                     .search {
-                        display: none;
+                        order: 3;
+                        flex-basis: 100%;
+                        margin: 0 1rem;
+                        #homeSearch {
+                            width: 100%;
+                        }
                     }
 
                     .login {
@@ -23,9 +33,9 @@
                         a {
                             margin-left: 0;
                             margin-right: 10px;
-                            .login-item{
-                                .login-item-icon{
-                                    i{
+                            .login-item {
+                                .login-item-icon {
+                                    i {
                                         height: 22px;
                                         width: 22px;
                                         font-size: 22px;
@@ -48,13 +58,12 @@
                 width: 100%;
 
                 .component-item {
-
                     .widget-container {
                         display: none;
                     }
 
                     .widget-information {
-                        display: block
+                        display: block;
                     }
                 }
             }
@@ -93,7 +102,7 @@
                                         margin-bottom: 20px;
 
                                         div {
-                                            img{
+                                            img {
                                                 margin-right: 0;
                                             }
                                             a {
