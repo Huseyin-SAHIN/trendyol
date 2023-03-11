@@ -19,6 +19,7 @@
   }
   body .container .header .headerMain .search #homeSearch {
     width: 100%;
+    font-size: 16px;
   }
   body .container .header .headerMain .login {
     justify-content: end;
@@ -38,7 +39,8 @@
     display: none;
   }
   body .container .navigation {
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
   body .container .component-list {
     width: 100%;
